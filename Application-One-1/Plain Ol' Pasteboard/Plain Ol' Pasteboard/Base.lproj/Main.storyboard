@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="18122" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_5" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="18093"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Plain_Ol__Pasteboard" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" misplaced="YES" editable="NO" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="feL-Oc-woP">
+                                <rect key="frame" x="20" y="44" width="374" height="769"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <color key="textColor" red="0.12984204290000001" green="0.12984612579999999" blue="0.12984395030000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="brr-gE-gSv">
+                                <rect key="frame" x="0.0" y="813" width="414" height="49"/>
+                                <items>
+                                    <barButtonItem systemItem="trash" id="Ui8-rz-73Y">
+                                        <connections>
+                                            <action selector="trashPressed:" destination="BYZ-38-t0r" id="fAy-Oq-aLo"/>
+                                        </connections>
+                                    </barButtonItem>
+                                </items>
+                            </toolbar>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="feL-Oc-woP" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="AaY-yf-SBE"/>
+                            <constraint firstItem="brr-gE-gSv" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" id="JW3-Zv-zFA"/>
+                            <constraint firstItem="brr-gE-gSv" firstAttribute="top" secondItem="feL-Oc-woP" secondAttribute="bottom" id="MU3-Zp-oEZ"/>
+                            <constraint firstItem="brr-gE-gSv" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="Mz7-F0-ZEx"/>
+                            <constraint firstItem="brr-gE-gSv" firstAttribute="top" secondItem="feL-Oc-woP" secondAttribute="bottom" id="PG0-bK-svY"/>
+                            <constraint firstItem="feL-Oc-woP" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="lgC-4j-iAd"/>
+                            <constraint firstItem="brr-gE-gSv" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="nRI-7o-SWE"/>
+                            <constraint firstItem="feL-Oc-woP" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="wnj-cz-tns"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="textView" destination="feL-Oc-woP" id="AN7-Z2-u4C"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="137.68115942028987" y="137.94642857142856"/>
+        </scene>
+    </scenes>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
